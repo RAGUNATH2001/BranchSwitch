@@ -38,8 +38,8 @@ public class BaseTest {
 
 	public static void setUp()  {
 
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+		WebDriverManager.edg().setup();
+		driver = new fire();
 		driver.get(pro.getProperty("url"));
 		driver.manage().window().maximize();
 
